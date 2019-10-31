@@ -1,7 +1,7 @@
-package no.hvl.dat103.buffer.java;
+package no.hvl.dat103.buffer;
 
 public class Producer extends Thread{
-    BBuffer buffer;
+    private BBuffer buffer;
 
     public Producer(BBuffer buffer) {
         this.buffer = buffer;
@@ -10,7 +10,8 @@ public class Producer extends Thread{
     @Override
     public void run() {
         do{
-            buffer.produce();
+            buffer.produser();
         }while (true);
+
     }
 }
